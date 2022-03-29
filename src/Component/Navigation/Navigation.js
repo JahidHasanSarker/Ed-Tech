@@ -3,7 +3,7 @@ import {  Col, Container, Image, Nav, Navbar, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import logo from './logo.gif'
 import useAuth from '../../Hook/useAuth';
-
+import { HashLink } from 'react-router-hash-link';
 
 import './Navigation.css';
 
@@ -24,24 +24,24 @@ const Navigation = () => {
                         </Nav.Link>
                         </Navbar.Brand>
                     <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
-                        
-                        <NavLink className="custom" activeClassName="activeStyle" to="/home">
-                                  Home
-                        </NavLink>
-                    
-                        <NavLink className="custom" activeClassName="activeStyle" to="/explore">
-                                  Services
-                        </NavLink>
+                    <Navbar.Collapse className="justify-content-end">               
 
-                        <NavLink className="custom" activeClassName="activeStyle" to="/explore">
-                                  Consultant
-                        </NavLink>
-
-                        <NavLink className="custom" activeClassName="activeStyle" to="/explore">
-                                  Motivate
-                        </NavLink>
                         
+                        <Nav.Link as={HashLink} className="custom" activeclassname="activeStyle" to="/home">
+                                Home
+                        </Nav.Link>
+
+                        <Nav.Link as={HashLink} className="custom" activeclassname="activeStyle" to="/home#services">
+                                Services
+                        </Nav.Link>
+
+                        <Nav.Link as={HashLink} className="custom" activeclassname="activeStyle" to="/home#consultant">
+                                Consultant
+                        </Nav.Link>
+
+                        <Nav.Link as={HashLink} className="custom" activeclassname="activeStyle" to="/home#motivate">
+                                Motivate
+                        </Nav.Link>
 
 
                         {/* {user.email && 

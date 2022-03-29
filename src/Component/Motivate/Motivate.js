@@ -5,7 +5,7 @@ import './Motivate.css';
 const AllReviews = () => {
 
     return (
-        <div>
+        <div id='motivate'>
             <Container>
                
                 <div>

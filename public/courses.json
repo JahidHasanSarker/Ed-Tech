@@ -1,0 +1,43 @@
+[
+    {
+        "_id": 1,
+        "course": "Make Fun of Javascript Array",
+        "price": 5500,
+        "img": "https://import.cdn.thinkific.com/176279/Vjgxx2AQWxlw7G145t7w_Array%20web%20thumb.png"
+    },
+
+    {
+        "_id": 2,
+        "course": "Understand ReactJS Advance Feature",
+        "price": 6000,
+        "img": "https://import.cdn.thinkific.com/176279/yMk9xagQIq8RBvXIXhOG_Understand%20ReactJS-01.png"
+    },
+
+    {
+        "_id": 3,
+        "course": "Web Design & UI/UX Bootcamp",
+        "price": 4000,
+        "img": "https://import.cdn.thinkific.com/176279/4XLRkycQSmBzDpsOTskG_Web_Design_%26_UI-UX_Bootcamp-01.png"
+    },
+
+    {
+        "_id": 4,
+        "course": "Backend Development Bootcamp - Node",
+        "price": 5500,
+        "img": "https://import.cdn.thinkific.com/176279/odYltfLcREWFF30KKP2E_Intro%20Image-01%20%281%29.png"
+    },
+
+    {
+        "_id": 5,
+        "course": "Understand ReactJS Core Feature",
+        "price": 5000,
+        "img": "https://import.cdn.thinkific.com/176279/6DRJbeLUQpud4hgLvepw_React1-01.png"
+    },
+
+    {
+        "_id": 6,
+        "course": "Javascript: All You Need To Know",
+        "price": 6500,
+        "img": "https://import.cdn.thinkific.com/176279/HsoVXpGtRkaF9uD2xqMs_Cover-JS-1-low-reg-03.jpg"
+    }
+]

@@ -6,7 +6,7 @@ import './Consultancy.css'
 
 const Team = () => {
     return (
-        <div>
+        <div id='consultant'>
             <Container>
                
                 <div>
