@@ -1,4 +1,46 @@
 .bg-img{
     max-width: 100%;
+    max-height: 100%;
     margin-top: -250px;
+}
+
+@media only screen and (max-width: 1356px) {
+    .bg-img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: -180px !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .bg-img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: -150px !important;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .bg-img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: -100px !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .bg-img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: -80px !important;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .bg-img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: -40px !important;
+    }
 }

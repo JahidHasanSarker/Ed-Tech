@@ -4,8 +4,10 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className='bg-img'>
-            <img src={img} alt="" />
+        <div>
+            <div className='bg-img'>
+                <img src={img} alt="" />
+            </div>
         </div>
     );
 };
