@@ -54,7 +54,7 @@ const OrderPlaced = () => {
                        
                     <div className="row">
                         
-                        <div className="col-xs-12 col-sm-12 col-md-4 mx-auto my-5">
+                        <div className="col-xs-12 col-sm-12 col-md-8 mx-auto my-5">
 
                             <div className="bg-white rounded-bg">
                             <form onSubmit={handleSubmit(onSubmit)}>

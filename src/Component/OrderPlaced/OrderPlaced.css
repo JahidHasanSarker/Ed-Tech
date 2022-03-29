@@ -38,20 +38,9 @@
     
 }
 
-.order-container{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
+
 body{
     background: #f3f7fd;
-}
-.accordion-button:not(.collapsed) {
-    background-color: white !important;
-}
-.accordion-button:not(.collapsed) {
-    /* color: #0c63e4; */
-    background-color: #fff !important;
-    box-shadow: 0 !important;
 }
 
 .order-details h3{

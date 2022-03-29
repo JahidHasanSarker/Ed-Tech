@@ -16,14 +16,14 @@ const Team = () => {
                         <h2>STACK CONSULTANCY - 100% FREE</h2>
                    </div>
                         
-                    <div className='mt-5'>
+                    <div className='my-5'>
                         <div className="row">
 
-                            <div className='col-md-5 consult-img'>
+                            <div className='col-md-5 col-sm-12 consult-img mb-5'>
                                     <img src={consultancy} alt=""/>
                             </div>
         
-                            <div className='col-md-6 offset-1 d-flex align-items-center justify-content-center'>
+                            <div className='col-md-6 col-sm-12 offset-md-1 d-flex align-items-center justify-content-center'>
                                 <div className="consult-info">
                                     <h5>Let Us Know What is Your Problem</h5>
                                     <h2>Submit Problem</h2>
