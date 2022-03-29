@@ -77,3 +77,27 @@
   font-family: "Muli",Sans-Serif;
   color: #424242;
 }
+
+@media only screen and (max-width: 700px) {
+  .sub-heading h2{
+    font-size: 1.5rem;
+  }
+  .consult-info h2{
+    font-size: 1.6rem;
+  }
+  .consult-info h5{
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .sub-heading h2{
+    font-size: 1.2rem;
+  }
+  .consult-info h2{
+    font-size: 1.3rem;
+  }
+  .consult-info h5{
+    font-size: 0.8rem;
+  }
+}
