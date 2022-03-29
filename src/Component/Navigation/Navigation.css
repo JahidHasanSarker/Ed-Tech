@@ -8,7 +8,7 @@
 }
 
 .custom:hover{
-    color: #dcc397;
+    color: #fa3c4c;
     border-bottom: 2px solid rgb(11, 192, 26);
     padding-bottom: 5px;
     border-radius: 3px;
@@ -20,8 +20,8 @@
     margin-left: 10px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #dcc397;
-    border: 1px solid #dcc397;
+    background-color: #fa3c4c;
+    
     border-radius: 7px;
     padding: 8px 20px;
 }

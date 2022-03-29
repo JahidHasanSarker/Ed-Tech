@@ -17,8 +17,8 @@ const Navigation = () => {
         <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg" >
                 <Container>
                     <Navbar.Brand>
-                    <Nav.Link> 
-                        <NavLink exact="true" to="/">
+                    <Nav.Link exact="true"> 
+                        <NavLink to="/">
                         <img width="130px" src={logo} alt=""/>
                               </NavLink>
                         </Nav.Link>
@@ -27,19 +27,19 @@ const Navigation = () => {
                     <Navbar.Collapse className="justify-content-end">               
 
                         
-                        <Nav.Link as={HashLink} className="custom" activeclassname="activeStyle" to="/home">
+                        <Nav.Link as={HashLink} exact="true" className="custom" activeclassname="activeStyle" to="/">
                                 Home
                         </Nav.Link>
 
-                        <Nav.Link as={HashLink} className="custom" activeclassname="activeStyle" to="/home#services">
+                        <Nav.Link as={HashLink} exact="true" className="custom" activeclassname="activeStyle" to="/home#services">
                                 Services
                         </Nav.Link>
 
-                        <Nav.Link as={HashLink} className="custom" activeclassname="activeStyle" to="/home#consultant">
+                        <Nav.Link as={HashLink} exact="true" className="custom" activeclassname="activeStyle" to="/home#consultant">
                                 Consultant
                         </Nav.Link>
 
-                        <Nav.Link as={HashLink} className="custom" activeclassname="activeStyle" to="/home#motivate">
+                        <Nav.Link as={HashLink} exact="true" className="custom" activeclassname="activeStyle" to="/home#motivate">
                                 Motivate
                         </Nav.Link>
 
@@ -55,7 +55,7 @@ const Navigation = () => {
                         
                         
                         {user.email && 
-                        <Nav.Link>                     
+                        <Nav.Link exact="true">                     
 
                             <div>
                                 

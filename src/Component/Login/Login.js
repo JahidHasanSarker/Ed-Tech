@@ -15,22 +15,24 @@ const Login = () => {
 
 
 
-const {signInUsingGoogle, setLoading, isLogin, handleregister, handleNameChange, handleEmailChange,      handlePasswordChange, error, toggolLogin} = useAuth();
+const {signInUsingGoogle, setIsLoading, isLogin, handleregister, handleNameChange, handleEmailChange,      handlePasswordChange, error, toggolLogin} = useAuth();
 
 const location = useLocation();
 const history = useHistory();
 const redirect_uri = location.state?.from || '/'
 console.log('came from', location.state?.from);
 
+
+
 const handleGoogleLogin = () => {
     signInUsingGoogle()
     .then(result =>{
-      setLoading(true)
+      setIsLoading(true)
         history.push(redirect_uri)
     })
     .catch((err) => console.log(err))
     .finally(() => {
-      setLoading(false);
+      setIsLoading(false);
     });
 }
 

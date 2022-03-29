@@ -24,9 +24,9 @@ const Service = (props) => {
                                     </div>
                                     <hr />
                                     <div className="d-flex justify-content-around">
-                                    <p style={{fontSize: '22px', fontWeight: '700', color: '#dcc397'}} className="m-0">${price} </p>
+                                    <p style={{fontSize: '22px', fontWeight: '700', color: '#fa3c4c'}} className="m-0">${price} </p>
                                         <Link to={`/orderPlaced/${_id}`}>
-                                            <Button className="mb-3" variant="outline-danger">Buy Now</Button>
+                                            <Button className="mb-3" variant="outline-danger">Enroll Now</Button>
                                         </Link>
                                     </div>
                                     

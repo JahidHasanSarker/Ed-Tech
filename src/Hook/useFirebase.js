@@ -11,7 +11,7 @@ const useFirebase = () => {
     const auth = getAuth();
     const [user, setUser] = useState({});
     const [admin, setAdmin] = useState(false);
-    const [loading, setLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
     const [name, setName] = useState('');
     const [email, setEmail]= useState('');
     const [password, setPassword]= useState('');
@@ -24,7 +24,7 @@ const useFirebase = () => {
 
 
     const signInUsingGoogle = () => {
-        setLoading(true)
+        setIsLoading(true)
         return signInWithPopup(auth, googleProvider)
         .then((result) => {
             const user = result.user;
@@ -35,7 +35,7 @@ const useFirebase = () => {
         .catch(error =>{
             setError(error.message);
         })
-        .finally(() => setLoading(false));
+        .finally(() => setIsLoading(false));
         
     }
 
@@ -83,7 +83,8 @@ const useFirebase = () => {
           .then(result => { })
       }
 
-    const createNewUser = (email, password ) => {
+    const createNewUser = ( email, password ) => {
+        
         createUserWithEmailAndPassword(auth, email, password)
         .then(result=>{
         
@@ -101,7 +102,19 @@ const useFirebase = () => {
         }) 
     }
 
-
+    // const updateName= (name)=> {
+    //     updateProfile(auth.currentUser, {
+    //       displayName: name
+    //     }).then(() => {
+    //       const newUser={...user, displayName: name} // recommend
+    //      setUser(newUser)
+          
+    //       // ...
+    //     }).catch((error) => {
+    //       // An error occurred
+    //       // ...
+    //     });
+    //   }
 
     const logOut = () => {
         signOut(auth)
@@ -110,13 +123,15 @@ const useFirebase = () => {
             })
     }
 
+  
+
     // observe whether user auth state changed or not
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
             }
-            setLoading(false)
+            setIsLoading(false)
         });
         return () => unsubscribe();
     }, [auth]);
@@ -143,8 +158,8 @@ const useFirebase = () => {
         user,
         signInUsingGoogle,
         admin,
-        loading, 
-        setLoading,
+        isLoading, 
+        setIsLoading,
         toggolLogin,
         isLogin,
         handleNameChange,
@@ -153,6 +168,7 @@ const useFirebase = () => {
         handleregister,
         error,
         logOut
+        //updateName
     }
 }
 
