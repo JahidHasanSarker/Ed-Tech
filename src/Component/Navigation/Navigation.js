@@ -29,11 +29,17 @@ const Navigation = () => {
                         <NavLink className="custom" activeClassName="activeStyle" to="/home">
                                   Home
                         </NavLink>
-                        
-
-                        
+                    
                         <NavLink className="custom" activeClassName="activeStyle" to="/explore">
                                   Services
+                        </NavLink>
+
+                        <NavLink className="custom" activeClassName="activeStyle" to="/explore">
+                                  Consultant
+                        </NavLink>
+
+                        <NavLink className="custom" activeClassName="activeStyle" to="/explore">
+                                  Motivate
                         </NavLink>
                         
 

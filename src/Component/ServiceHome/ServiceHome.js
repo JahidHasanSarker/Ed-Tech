@@ -14,7 +14,7 @@ const ServiceHome = () => {
     return (
         <div>
             <div id="cards_landscape_wrap-2">
-            <h2 className="pt-5 fw-bold">Our Apartments</h2>
+            <h2 className="pt-5 fw-bold">Our Services</h2>
             
             <div className="container">
                 <div className="row">

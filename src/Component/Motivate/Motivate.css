@@ -29,6 +29,24 @@
   .pn_review_profile span {
     position: absolute;
   }
+
+  .motive-text h2{
+    font-family: "Barlow Condensed",Sans-Serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #424242;
+    font-size: 1.8rem;
+  }
+  .motive-text h6{
+    font-family: "Montserrat",Sans-Serif;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 0.65rem;
+    color: #424242;
+    font-size: 1rem;
+    opacity: 0.5
+  }
   
   
   @media (max-width: 575px) {
