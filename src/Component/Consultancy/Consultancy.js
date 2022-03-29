@@ -13,7 +13,7 @@ const Team = () => {
                    
                    <div className='text-center sub-heading'>
                         <h5>Your Confusion Stack Solution</h5>
-                        <h2>STACK CONSULTANCY - 100% FREE</h2>
+                        <h2 className='consult'>STACK CONSULTANCY - 100% FREE</h2>
                    </div>
                         
                     <div className='my-5'>
@@ -61,3 +61,4 @@ export default Team;
                         </div>
                     </div>
                 </div>  */
+                

@@ -13,8 +13,8 @@ const AllReviews = () => {
                         <div>
                         <div className="row">
                             <div className="col-md-12 motive-text">
-                                <h6 className="text-center pb-4">Human to Human Resource</h6>
-                                <h2 className="text-center">Motive Behind Stack School </h2>
+                                <h6 className="text-center pb-2">Human to Human Resource</h6>
+                                <h2 className="text-center consult">Motive Behind Stack School </h2>
                             </div>
 
                            

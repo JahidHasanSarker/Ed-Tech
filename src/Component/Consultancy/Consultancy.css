@@ -18,6 +18,37 @@
   
 }
 
+
+
+.consult{
+  position: relative;
+  
+}
+
+.consult::before{
+  content:" ";
+  display: block;
+  height: 4px;
+  width: 40px;
+  position: absolute;
+  transform: translatex(-50%);
+  top: 140%;
+  left: 50%;
+  background: red;
+
+}
+
+/* .consult::before{
+  display: inline-block;
+    position: absolute;
+    left: -1rem;
+    width: 4px;
+    height: 90%;
+    background-color: #417505;
+    content: "";
+
+} */
+
 .consult-img img{
   width: 100%;
 }
